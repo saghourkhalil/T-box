@@ -1,0 +1,27 @@
+<div class = "item">
+    <% @items.sort.each do |product| %>
+        <div class= "col-md-4">
+          <figure class="snip1195">
+            <h4><%=product.title%></h4>
+              <div class="image">
+                <img src="<%=product.image_url%>" alt="sq-sample14" />
+              </div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i class="ion-ios-star-outline"></i>
+              </div>
+            <figcaption>
+              <p>
+                <%= product.description%></li>
+              </p>
+              <div class="price">
+                <span class="product_price"><s>$29.00</s><%=product.price%>$</span>
+              </div>
+           <% if user_signed_in? %>
+              <%= button_to "Add to cart", cart_items_path(:id => product),class: "add-to-cart" %>
+           <% end %>
+           </figure>
+        </div>
+    <% end %>
+</div>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="menu.js"></script>

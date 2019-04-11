@@ -1,0 +1,340 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require css/bootstrap.min
+
+
+ * = require css/bootstrap.min
+ * = require css/owl.carousel.min
+ * = require css/themify-icons
+ * = require css/magnific-popup
+ * = require css/animate
+ * = require css/normalize
+ * = require style
+ * = require css/responsive
+
+
+ */
+
+.teambox{
+  width: 15%;
+}
+
+
+
+
+ /*profil*/
+ .profil{
+   padding-top: 100px;
+   
+ }
+ /*merci*/
+ .merci{
+   padding-top: 60px;
+ }
+ /*places*/
+ .places{
+  padding-top: 100px;
+ }
+ /*item*/
+ .panier{
+  padding-top: 100px;
+ }
+ .item{
+   padding-top: 100px;
+ }
+ /*button*/
+ .stretch, .buttonn:after, .buttonn:before {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}    
+.buttonn {
+  padding-top: 200px;
+  width: 100px;
+  background: rgb(234, 9, 9);
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgb(234, 24, 9)), color-stop(100%, rgb(255, 38, 0)));
+  background-image: -moz-linear-gradient(left, rgb(234, 35, 9), rgb(246, 26, 10));
+  background-image: -webkit-linear-gradient(left, rgb(234, 9, 9), rgb(246, 26, 10));
+  background-image: linear-gradient(to right, rgb(234, 9, 9), rgb(246, 10, 10));
+  -moz-border-radius: 1.5em;
+  -webkit-border-radius: 1.5em;
+  border-radius: 1.5em;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  border: none;
+  padding: 5px;
+  color: #FAF15D;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  z-index: 99;
+}
+.buttonn:after {
+  -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+  -webkit-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+  box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+  background: #FAF15D;
+  content: "";
+  height: 2px;
+  opacity: 0;
+}
+.buttonn:before {
+  content: "";
+  opacity: 0;
+}
+.buttonn:hover {
+  -webkit-animation: glitch 750ms infinite;
+}
+.buttonn:hover:before {
+  opacity: 1;
+}
+.buttonn:hover:after {
+  -webkit-animation: scan 2s infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes glitch {
+  0% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+  5% {
+    -moz-transform: skewX(2deg);
+    -ms-transform: skewX(2deg);
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+    opacity: 0.75;
+  }
+  10% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  15% {
+    -moz-transform: skewX(-5deg);
+    -ms-transform: skewX(-5deg);
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 0.75;
+  }
+  20% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  45% {
+    -moz-transform: skewX(3deg);
+    -ms-transform: skewX(3deg);
+    -webkit-transform: skewX(3deg);
+    transform: skewX(3deg);
+    opacity: 0.75;
+  }
+  50% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  55% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 0.75;
+  }
+  60% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  75% {
+    -moz-transform: skewX(2deg);
+    -ms-transform: skewX(2deg);
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+  }
+  80% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+  85% {
+    -moz-transform: skewX(-8deg);
+    -ms-transform: skewX(-8deg);
+    -webkit-transform: skewX(-8deg);
+    transform: skewX(-8deg);
+    opacity: 0.75;
+  }
+  90% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+}
+@-webkit-keyframes scan {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 97%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+a:link, a:visited
+{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+
+
+ 
+ /*add to cart*/
+ @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+ @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+ figure.snip1195 {
+   font-family: 'Raleway', Arial, sans-serif;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+   min-width: 400px;
+   max-width: 600px;
+   width: 100%;
+   background: #1a1a1a;
+   color: #ffffff;
+   text-align: center;
+   border-radius: 8px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+ }
+ figure.snip1195 * {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-transition: all 0.35s ease;
+   transition: all 0.35s ease;
+ }
+ figure.snip1195 .image {
+   background-color: #000000;
+   width: 50%;
+   overflow: hidden;
+ }
+ figure.snip1195 img {
+   max-width: 100%;
+   vertical-align: top;
+ }
+ figure.snip1195 figcaption {
+   position: absolute;
+   width: 50%;
+   right: 0;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   padding: 10px 35px;
+ }
+ figure.snip1195 h4,
+ figure.snip1195 p,
+ figure.snip1195 .price {
+   margin: 0 0 8px;
+ }
+ figure.snip1195 h4 {
+   position: absolute;
+   width: 50%;
+   top: 10px;
+   text-transform: uppercase;
+   font-weight: 400;
+   color: #ffffff;
+   letter-spacing: 1px;
+   z-index: 1;
+ }
+ figure.snip1195 p {
+   font-size: 0.7em;
+   font-weight: 500;
+   line-height: 1.6em;
+ }
+ figure.snip1195 .rating {
+   position: absolute;
+   width: 50%;
+   line-height: 44px;
+   color: #ffffff;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.3);
+ }
+ figure.snip1195 .price {
+   color: #ffffff;
+   font-size: 1.3em;
+   opacity: 0.8;
+ }
+ figure.snip1195 .price s {
+   display: inline-block;
+   padding: 0 8px 0 0;
+   font-size: 0.85em;
+   color: #f39c12;
+ }
+ figure.snip1195 .add-to-cart {
+   text-decoration: none;
+   bottom: 0;
+   right: 0;
+   font-weight: 600;
+   width: 110%;
+   background-color: rgba(0, 0, 0, 0.2);
+   line-height: 44px;
+   font-size: 0.75em;
+   text-transform: uppercase;
+   color: #ffffff;
+ }
+ figure.snip1195:hover img,
+ figure.snip1195.hover img {
+   opacity: 0.6;
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ figure.snip1195:hover .add-to-cart,
+ figure.snip1195.hover .add-to-cart {
+   background-color: rgba(0, 0, 0, 0.5);
+ } 
+ 
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");

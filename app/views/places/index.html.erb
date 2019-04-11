@@ -1,0 +1,36 @@
+
+<div class = "places">
+    <% @places.each do |place| %>
+    <div class="d-flex bg-success">
+    <div class="">
+    <div class="col-md-4">
+      <div class="card hovercard">
+          <div class="cardheader">
+            <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&markers=size:small%7Ccolor:red%7C#{place.latitude},#{place.longitude}&key=#{Rails.application.credentials.api_key_map}" %>
+          </div>
+          <div class="avatar">
+            <img alt="" src="<%=place.image_url%>">
+          </div>
+          <div class="info">
+              <div class="title">
+                  <h4><%=place.name%></h4>
+              </div>
+              <div class="bottom">
+              </br><img src=http://openweathermap.org/img/w/<%= @meteo.get_values(place.longitude, place.latitude)["weather"][0]["icon"]%>.png>
+                  <%=(@meteo.get_values(place.longitude, place.latitude)["main"]["temp_min"]-273.15).round(0)%>°C/
+                  <%=(@meteo.get_values(place.longitude, place.latitude)["main"]["temp_max"]-273.15).round(0)%>°C, 
+                  <%=@meteo.get_values(place.longitude, place.latitude)["weather"][0]["description"]%>.</br>
+                  <p><%=place.description%></p></br>
+              </div>
+              <%= link_to 'Voir la carte', place, class: "button-one" %>
+            </div>
+        </div>
+    </div>
+  </div>
+<% end %>
+</div>
+<br>
+
+
+
+

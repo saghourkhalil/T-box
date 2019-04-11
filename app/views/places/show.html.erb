@@ -1,0 +1,28 @@
+<div class = "places">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @place.name %>
+</p>
+ 
+
+
+<%= link_to 'Back', places_path, class: "button" %>
+
+<p>
+    <div id="map"></div>
+</p>
+
+<div id="directions-panel"></div>
+
+<% provide :head_tags do %>
+  <meta name='turbolinks-visit-control' content='reload'>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      initMap(<%=@place.latitude%>, <%=@place.longitude%>)
+    });
+  </script>
+<% end %>
+</div>
