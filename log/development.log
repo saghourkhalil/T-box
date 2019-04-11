@@ -18190,3 +18190,122 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 142ms (Views: 126.3ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/places" for 127.0.0.1 at 2019-04-11 14:30:00 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:6
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (3.5ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:3
+  Rendered places/index.html.erb within layouts/application (208.0ms)
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 4.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    16:                   <h4><%=place.name%></h4>
+    17:               </div>
+    18:               <div class="bottom">
+    19:               </br><img src=http://openweathermap.org/img/w/<%= @meteo.get_values(place.longitude, place.latitude)["weather"][0]["icon"]%>.png>
+    20:                   <%=(@meteo.get_values(place.longitude, place.latitude)["main"]["temp_min"]-273.15).round(0)%>°C/
+    21:                   <%=(@meteo.get_values(place.longitude, place.latitude)["main"]["temp_max"]-273.15).round(0)%>°C, 
+    22:                   <%=@meteo.get_values(place.longitude, place.latitude)["weather"][0]["description"]%>.</br>
+  
+app/views/places/index.html.erb:19:in `block in _app_views_places_index_html_erb__1273323233336741452_69866841926020'
+app/views/places/index.html.erb:3:in `_app_views_places_index_html_erb__1273323233336741452_69866841926020'
+Started GET "/places" for 127.0.0.1 at 2019-04-11 14:31:32 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:6
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (3.0ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:3
+  Rendered places/index.html.erb within layouts/application (159.2ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 4.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    16:                   <h4><%=place.name%></h4>
+    17:               </div>
+    18:               <div class="bottom">
+    19:               </br><img src=http://openweathermap.org/img/w/<%= @meteo.get_values(place.longitude, place.latitude)["weather"][0]["icon"]%>.png>
+    20:                   <%=(@meteo.get_values(place.longitude, place.latitude)["main"]["temp_min"]-273.15).round(0)%>°C/
+    21:                   <%=(@meteo.get_values(place.longitude, place.latitude)["main"]["temp_max"]-273.15).round(0)%>°C, 
+    22:                   <%=@meteo.get_values(place.longitude, place.latitude)["weather"][0]["description"]%>.</br>
+  
+app/views/places/index.html.erb:19:in `block in _app_views_places_index_html_erb__1273323233336741452_69866679434100'
+app/views/places/index.html.erb:3:in `_app_views_places_index_html_erb__1273323233336741452_69866679434100'
+Started GET "/places" for 127.0.0.1 at 2019-04-11 14:31:44 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:6
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (2.6ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:3
+  Rendered places/index.html.erb within layouts/application (76.9ms)
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:62
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 201ms (Views: 186.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2019-04-11 14:32:12 +0200
+Processing by PlacesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:6
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (2.7ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:3
+  Rendered places/index.html.erb within layouts/application (144.3ms)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 3.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    16:                   <h4><%=place.name%></h4>
+    17:               </div>
+    18:               <div class="bottom">
+    19:               </br><img src=http://openweathermap.org/img/w/<%= @meteo.get_values(place.longitude, place.latitude)["weather"][0]["icon"]%>.png>
+    20:                   <%=(@meteo.get_values(place.longitude, place.latitude)["main"]["temp_min"]-273.15).round(0)%>°C/
+    21:                   <%=(@meteo.get_values(place.longitude, place.latitude)["main"]["temp_max"]-273.15).round(0)%>°C, 
+    22:                   <%=@meteo.get_values(place.longitude, place.latitude)["weather"][0]["description"]%>.</br>
+  
+app/views/places/index.html.erb:19:in `block in _app_views_places_index_html_erb__1273323233336741452_69866841985320'
+app/views/places/index.html.erb:3:in `_app_views_places_index_html_erb__1273323233336741452_69866841985320'
+Started GET "/home/index" for 127.0.0.1 at 2019-04-11 14:33:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:48
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:62
+  Rendered layouts/_navbar.html.erb (8.4ms)
+Completed 200 OK in 147ms (Views: 142.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2019-04-11 14:35:11 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:48
+  [1m[36mCart Load (0.8ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:62
+  Rendered layouts/_navbar.html.erb (9.8ms)
+Completed 200 OK in 2382ms (Views: 2376.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2019-04-11 14:35:43 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:48
+  [1m[36mCart Load (1.0ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT $2[0m  [["user_id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:62
+  Rendered layouts/_navbar.html.erb (7.5ms)
+Completed 200 OK in 1128ms (Views: 1124.6ms | ActiveRecord: 1.9ms)
+
+
