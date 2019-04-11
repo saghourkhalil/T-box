@@ -113,7 +113,6 @@
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #010202;
 }
 
 .dropdown {
@@ -124,7 +123,6 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(10, 11, 12);
   min-width: 350px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
