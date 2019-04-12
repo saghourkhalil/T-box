@@ -9,7 +9,7 @@
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 				<div class="group">
         <%= f.label :name, class: "label" %><br />
-        <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "input" %>
+        <%= f.text_field :name, autofocus: true, autocomplete: "nom", class: "input" %>
 				</div>
 				<div class="group">
 				<%= f.label :email, class: "label" %><br />
@@ -17,7 +17,7 @@
 				</div>
 				<div class="group">
         <%= f.label :password, class: "label" %><br />
-        <%= f.password_field :password, autocomplete: "current-password", class: "input" %>
+        <%= f.password_field :password, autocomplete: "mot de passe", class: "input" %>
         </div>
         <% if devise_mapping.rememberable? -%>
         <div class="group">

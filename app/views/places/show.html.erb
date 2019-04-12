@@ -6,10 +6,35 @@
   <strong>Name:</strong>
   <%= @place.name %>
 </p>
- 
+<%= link_to 'retour', places_path, class: "button" %>
+
 <div class = "item">
     
-</div>  
+<div class= "col-md-4">
+
+<figure class="snip1278">
+  <h4>BOX</h4>
+  <div class="image">
+    <img src="https://www.all-musculation.com/AM-v6/images/20170407-materiel-base.jpg" alt="sq-sample6"/>
+  </div>
+  <div class="rating"><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i class="ion-ios-star"></i><i class="ion-ios-star-outline"></i></div>
+  <figcaption>
+    <p>
+dans cette box il y a du materiel de musculation...
+    </p>
+    <div class="price">
+      <s>24.00euro</s>5.00euro/h
+    </div>
+  </figcaption>
+  <a href="#" class="add-to-cart">Panier</a>
+</figure>
+
+</div>
+
+
+
+
+<div class= "col-md-4">
 
 <figure class="snip1278">
   <h4>BOX</h4>
@@ -22,16 +47,17 @@
 dans cette box il du materiel de foot, bascket...
     </p>
     <div class="price">
-      <s>24.00euro</s>5.00euro
+      <s>24.00euro</s>5.00euro/h
     </div>
   </figcaption>
   <a href="#" class="add-to-cart">Panier</a>
 </figure>
+</div>
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="menu.js"></script>
 
-<%= link_to 'Back', places_path, class: "button" %>
 
 <p>
     <div id="map"></div>
@@ -47,7 +73,3 @@ dans cette box il du materiel de foot, bascket...
     });
   </script>
 <% end %>
-
-</div>
-
-

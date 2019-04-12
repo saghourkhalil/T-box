@@ -43,20 +43,20 @@
 		</div>
 			<ul class="nav navbar-nav navbar-right" >
 			<li>
-				<%= link_to 'Acceuil', home_index_path %>
+				<%= link_to 'Accueil', home_index_path %>
 			</li>			
 		<% if user_signed_in? %>
 			<li>
-				<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+				<%= link_to 'Se déconnecté', destroy_user_session_path, method: :delete %>
 			</li>
 			<li>
-				<%= link_to 'My Acount', home_profil_path%>
+				<%= link_to 'Mon profil', home_profil_path%>
 			</li>
 			<li>
-				<%= link_to 'Edit', edit_user_registration_path %>
+				<%= link_to 'Edit son profil', edit_user_registration_path %>
 			</li>
 			<li>
-				<%= link_to 'Places', places_path %>
+				<%= link_to 'Box', places_path %>
 			</li>
 			<li>
 				<%= link_to 'Panier', cart_path(current_user.cart.id)%>
@@ -64,7 +64,7 @@
 		
 		<%else%>
 			<li>
-				<%= link_to 'Sign in/Sign Up', new_user_registration_path %>
+				<%= link_to 'Se connecté/inscription', new_user_registration_path %>
 			</li>  
 	
 	<% end %>
